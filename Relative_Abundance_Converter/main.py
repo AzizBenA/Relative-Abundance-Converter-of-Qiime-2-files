@@ -10,8 +10,8 @@ print(trans_df)
 df.to_csv(r"C:\Users\Aziz Ben Ammar\Desktop\output\level-7.csv", index=False)
 trans_df.to_csv(r'C:\Users\Aziz Ben Ammar\Desktop\output\percent_abundance_7.csv', index=True, header=False)
 
-writer = pd.ExcelWriter('C:/Users/Aziz Ben Ammar/Desktop/output/Excel_file_level_7.xlsx')
-df_1 = pd.read_csv("C:/Users/Aziz Ben Ammar/Desktop/output/percent_abundance_7.csv")
+writer = pd.ExcelWriter('Excel_file_level_7.xlsx')
+df_1 = pd.read_csv("percent_abundance_7.csv")
 df_1.to_excel(writer, index=False)
 
 writer.close()

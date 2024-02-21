@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv(r"C:\Users\Aziz Ben Ammar\Desktop\level-7.csv")
+df = pd.read_csv(r"level-7.csv")
 
 percent_abundances = df.iloc[:, 1:].div(df.iloc[:, 1:].sum(axis=1), axis=0) * 100
 percent_abundances.insert(0, 'Sample_id', df.iloc[:, 0])
